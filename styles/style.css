@@ -54,7 +54,7 @@ h1 {
 .sub-title {
   font-size: 26px;
   font-style: italic;  
-  font-weight: thin !important;
+  font-weight: lighter !important;
 }
 
 p {
