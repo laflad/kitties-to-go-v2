@@ -4,9 +4,29 @@
   font-family: arial;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+  background-color: #1D819A;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 header {
   padding: 6rem 14rem;
-  background-color: #239AB9;
+  background-color: #1D819A;
   color: white;  
 }
 
@@ -15,7 +35,7 @@ html {
 }
 
 a {
-  color: #239AB9;
+  color: #1D819A;
 }
 
 nav {
@@ -37,13 +57,17 @@ nav ul li a {
     color: #3A3A3A;
     font-weight: bold;
     margin-right: 20px;
-    font-size: 14px;
+    font-size: 20px;
+    padding: .5rem;
+    margin: .5rem;
 }
 
 nav ul li:not(:last-child):after {
     content: "/";
     position: relative;
-    left: -10px;
+    padding: .5rem;
+    margin: .5rem;
+
 }
 
 h1 {
@@ -83,7 +107,7 @@ ul {
   padding-left: 3rem;
 }
 .teal{
-  color:#239AB9;
+  color:#1D819A;
 }
 
 aside {
@@ -104,7 +128,7 @@ footer {
 }
 
 blockquote {
-  color: #239AB9;
+  color: #1D819A;
   padding: 3rem 0rem;
   font-size: 26px;
   font-weight: 300 !important;
